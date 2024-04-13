@@ -5,13 +5,11 @@ import com.google.gson.annotations.SerializedName;
 
 public class Pokemon {
 
-    @SerializedName("name")
-    @Expose
     private String name;
 
-    @SerializedName("url")
-    @Expose
     private String url;
+
+    private int number;
 
     public String getName() {
         return name;
@@ -19,6 +17,11 @@ public class Pokemon {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getNumber() {
+        String [] urlParts = url.split("/");
+        return Integer.parseInt(urlParts[urlParts.length - 1]);
     }
 
     public String getDescription() {

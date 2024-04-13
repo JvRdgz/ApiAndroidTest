@@ -7,11 +7,9 @@ import java.util.ArrayList;
 
 public class PokemonFetchResults {
 
-    @SerializedName("results")
-    @Expose
-    private ArrayList results;
+    private ArrayList<Pokemon> results;
 
-    public ArrayList getResults () {
+    public ArrayList<Pokemon> getResults () {
         return results;
     }
 }

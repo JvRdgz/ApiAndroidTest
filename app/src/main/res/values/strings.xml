@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ApliAndroidTest</string>
+    <string name="pokedex">Pokedex</string>
 </resources>
